@@ -4,7 +4,8 @@
 
 一份面向**在读物理系学生**的开源学习路线与资源索引。三个核心目标：**拿到高薪出路**、**自己培养科研能力**、**走上顶尖硕士/直博路径**。
 
-在线阅读（待部署）：`https://physdiy.wiki`
+**在线阅读**：https://shaoyitong2022-dot.github.io/physics-self-learning/
+**仓库**：https://github.com/shaoyitong2022-dot/physics-self-learning
 
 ## 定位
 
@@ -77,12 +78,11 @@ docs/
 | `overrides/partials/comments.html` | giscus 评论组件（**启用前需替换占位 repo id**） |
 | `template.md` | 新增页面的格式模板 |
 
-### 首次部署要做的事
+### 部署状态
 
-1. 在 `mkdocs.yml` 里把 `site_url`、`repo_url` 改成你的仓库地址
-2. 启用评论：见 `overrides/partials/comments.html` 里的注释，去 [giscus.app](https://giscus.app/zh-CN) 生成 id 填回去
-3. 仓库 Settings → Pages → Source 选 `gh-pages` 分支
-4. 推一次 master，`deploy.yml` 会自动构建并发布
+已上线。推 master 后 `deploy.yml` 会自动 `mkdocs gh-deploy`，Pages 来源指向 `gh-pages` 分支。
+
+**还差一步：启用评论。**见 `overrides/partials/comments.html` 里的注释——去 [giscus.app](https://giscus.app/zh-CN) 填入仓库生成 id，替换文件里的占位值即可。仓库已是 public，满足 giscus 的要求。
 
 ## 本地开发
 
