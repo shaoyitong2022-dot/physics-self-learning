@@ -1,0 +1,121 @@
+site_name: 物理自学手册
+site_url: https://physdiy.wiki/
+site_author: phys-self-learning
+site_description: >-
+  一份面向自学者与转行者的物理学开源学习路线与资源索引
+
+repo_name: physics-self-learning
+repo_url: https://github.com/your-name/physics-self-learning/
+
+copyright: Copyright &copy; 2026-present 物理自学手册
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tracking
+    - navigation.top
+    - navigation.indexes
+    - content.code.copy
+    - content.code.annotate
+    - search.highlight
+    - search.suggest
+    - search.share
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: 切换到浅色模式
+
+  font:
+    text: Roboto Slab
+    code: Roboto Mono
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - footnotes
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+plugins:
+  - search:
+      lang:
+        - zh
+  - git-revision-date
+  - minify:
+      minify_html: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/your-name/physics-self-learning/
+
+nav:
+  - 前言: "index.md"
+  - 如何使用这本书: "使用指南.md"
+  - 学习路线规划: "学习规划.md"
+  - 必学工具:
+      - 工具箱/index.md
+      - LaTeX 与科技写作: "工具箱/LaTeX.md"
+      - 科学计算栈: "工具箱/科学计算.md"
+      - 数据处理与误差分析: "工具箱/数据处理.md"
+      - 文献检索: "工具箱/文献检索.md"
+  - 数学预备:
+      - 数学基础/index.md
+      - 微积分与矢量分析: "数学基础/微积分.md"
+      - 线性代数: "数学基础/线性代数.md"
+      - 微分方程: "数学基础/微分方程.md"
+      - 数学物理方法: "数学基础/数学物理方法.md"
+      - 概率与统计: "数学基础/概率统计.md"
+  - 普通物理:
+      - 普通物理/index.md
+      - 力学: "普通物理/力学.md"
+      - 电磁学: "普通物理/电磁学.md"
+      - 热学: "普通物理/热学.md"
+      - 光学: "普通物理/光学.md"
+      - 近代物理: "普通物理/近代物理.md"
+  - 四大力学:
+      - 四大力学/index.md
+      - 理论力学: "四大力学/理论力学.md"
+      - 电动力学: "四大力学/电动力学.md"
+      - 量子力学: "四大力学/量子力学.md"
+      - 热力学与统计物理: "四大力学/热统.md"
+  - 计算物理:
+      - 计算物理/index.md
+      - 数值方法: "计算物理/数值方法.md"
+      - 项目清单: "计算物理/项目清单.md"
+  - 习题与解答资源: "习题与解答.md"
+  - 教材推荐: "教材推荐.md"
+  - 进阶理论:
+      - 进阶理论/index.md
+      - 量子场论: "进阶理论/量子场论.md"
+      - 广义相对论: "进阶理论/广义相对论.md"
+      - 群论与对称性: "进阶理论/群论.md"
+      - 微分几何与拓扑: "进阶理论/微分几何与拓扑.md"
+  - 方向路线:
+      - 方向路线/index.md
+      - 凝聚态物理: "方向路线/凝聚态.md"
+      - 高能粒子与场论: "方向路线/高能粒子.md"
+      - 天体与宇宙学: "方向路线/天体宇宙.md"
+      - 原子分子与光物理: "方向路线/AMO.md"
+      - 流体与非线性: "方向路线/流体非线性.md"
+  - 后记: "后记.md"
