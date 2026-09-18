@@ -1,11 +1,11 @@
 site_name: 物理自学手册
-site_url: https://physdiy.wiki/
+site_url: https://shaoyitong2022-dot.github.io/physics-self-learning/
 site_author: phys-self-learning
 site_description: >-
   一份面向自学者与转行者的物理学开源学习路线与资源索引
 
 repo_name: physics-self-learning
-repo_url: https://github.com/your-name/physics-self-learning/
+repo_url: https://github.com/shaoyitong2022-dot/physics-self-learning/
 
 copyright: Copyright &copy; 2026-present 物理自学手册
 
@@ -69,7 +69,7 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/your-name/physics-self-learning/
+      link: https://github.com/shaoyitong2022-dot/physics-self-learning/
 
 nav:
   - 前言: "index.md"

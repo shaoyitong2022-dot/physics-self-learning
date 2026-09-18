@@ -175,4 +175,4 @@
 
 ### 发现链接失效 / 内容有错怎么办？
 
-直接提 issue，或者更好——直接改掉提 PR。详见[贡献指南](https://github.com/your-name/physics-self-learning/blob/master/CONTRIBUTING.md)。
+直接提 issue，或者更好——直接改掉提 PR。详见[贡献指南](https://github.com/shaoyitong2022-dot/physics-self-learning/blob/master/CONTRIBUTING.md)。
