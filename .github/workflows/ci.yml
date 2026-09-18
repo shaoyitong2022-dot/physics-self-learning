@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [master, main]
+  push:
+    branches: [master, main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: 安装依赖
+        run: pip install -r requirements.txt
+
+      - name: 构建站点（严格模式）
+        run: mkdocs build --strict
+
+      - name: 检查失效链接
+        run: |
+          pip install lychee
+          lychee --no-progress --accept 200,203,206,429 --exclude-loopback site/ || true
+        continue-on-error: true

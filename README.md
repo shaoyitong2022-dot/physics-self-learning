@@ -40,15 +40,20 @@ docs/
 ├── 科研训练.md          ★ 如何自己培养科研能力
 ├── 升学路径.md          ★ 保研 / 直博 / 出国攻略
 ├── 学习规划.md          按年级的规划 + 数学贯穿线
-├── 轨道/               ★ 8 条轨道
+├── 心态与节奏.md        ★ 卡住、比较、拖延、怀疑自己时读这一页
+├── 轨道/               ★ 12 条轨道
 │   ├── 同步补强（0）    课内没学明白时换资源重学
 │   ├── 理论物理（A）    科研向
 │   ├── 凝聚态（B）      综合最优、产业接口最好
 │   ├── 高能天体（C/C2） 学术导向
-│   ├── AMO（D）         量子计算对口
+│   ├── AMO（D）         冷原子与量子光学
+│   ├── 量子信息（D2）   量子计算对口，产业最热
 │   ├── 计算AI量化（E）  高薪轨道
 │   ├── 考研（F）        应试
-│   └── 流体非线性（G）
+│   ├── 流体非线性（G）
+│   ├── 生物物理（H）
+│   ├── 软物质（I）
+│   └── 等离子体与核物理（J）
 ├── 习题与解答.md        ★ 自学者唯一的"判卷"手段
 ├── 教材推荐.md
 ├── 工具箱/             LaTeX、科学计算、数据处理、文献检索
@@ -56,7 +61,41 @@ docs/
 ├── 普通物理/           力、热、光、电、近代
 ├── 四大力学/           理力、电动、量子、热统
 ├── 计算物理/           数值方法 + 项目清单 ★
-└── 进阶理论/           QFT、GR、群论、微分几何
+├── 进阶理论/           QFT、GR、群论、微分几何
+└── FAQ.md              常见问题，尽量给直接答案
+```
+
+## 项目设施
+
+| 设施 | 说明 |
+| --- | --- |
+| `mkdocs.yml` | Material 主题 + MathJax + giscus 评论（需配 repo id） |
+| `.github/workflows/ci.yml` | PR 与推送时 `mkdocs build --strict` 校验 + 失效链接检查 |
+| `.github/workflows/deploy.yml` | 推送 master 后自动 `mkdocs gh-deploy` 到 GitHub Pages |
+| `.github/ISSUE_TEMPLATE/` | 资源推荐、链接失效两类模板 |
+| `CONTRIBUTING.md` | 贡献指南 |
+| `overrides/partials/comments.html` | giscus 评论组件（**启用前需替换占位 repo id**） |
+| `template.md` | 新增页面的格式模板 |
+
+### 首次部署要做的事
+
+1. 在 `mkdocs.yml` 里把 `site_url`、`repo_url` 改成你的仓库地址
+2. 启用评论：见 `overrides/partials/comments.html` 里的注释，去 [giscus.app](https://giscus.app/zh-CN) 生成 id 填回去
+3. 仓库 Settings → Pages → Source 选 `gh-pages` 分支
+4. 推一次 master，`deploy.yml` 会自动构建并发布
+
+## 本地开发
+
+```bash
+python -m venv .venv
+.venv/Scripts/pip install -r requirements.txt   # Windows
+.venv/Scripts/mkdocs serve
+```
+
+提交前跑一次严格构建，CI 用的就是这条命令：
+
+```bash
+.venv/Scripts/mkdocs build --strict
 ```
 
 ## 如何贡献

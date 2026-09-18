@@ -1,0 +1,38 @@
+name: 链接失效 / 内容勘误
+description: 报告打不开的链接，或书中的事实性错误
+title: "[勘误] "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: 问题类型
+      options:
+        - 链接打不开（404 / 域名失效）
+        - 链接指向的内容变了（课程改版、教材换版）
+        - 事实性错误（书名、作者、课号写错）
+        - 其他
+    validations:
+      required: true
+
+  - type: input
+    id: page
+    attributes:
+      label: 出现在哪个页面
+      placeholder: 例如：四大力学/电动力学
+    validations:
+      required: true
+
+  - type: textarea
+    id: detail
+    attributes:
+      label: 具体情况
+      description: 如果是链接失效，贴上原链接和错误信息；如果是内容错误，说明正确的是什么
+    validations:
+      required: true
+
+  - type: markdown
+    value: |
+      ---
+      资源索引类项目最大的敌人就是链接腐烂。**报一个失效链接，和写一篇新页面同样有价值。**
+      如果你愿意，也可以直接提 PR 修掉它。

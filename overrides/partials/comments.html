@@ -1,0 +1,35 @@
+{% if page and page.meta and page.meta.comments is not sameas false %}
+  {% if not page.is_home %}
+    <hr class="giscus-sep" />
+    <h2 id="__comments" style="margin-top:2rem">聊聊</h2>
+    <p style="font-size:.8rem;opacity:.75">
+      正在自学这门课？可以在下面留言，注明你的进度和目标，约人一起做题或组队。
+    </p>
+    <script
+      src="https://giscus.app/client.js"
+      data-repo="YOUR_USERNAME/physics-self-learning"
+      data-repo-id="YOUR_REPO_ID"
+      data-category="Announcements"
+      data-category-id="YOUR_CATEGORY_ID"
+      data-mapping="pathname"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="bottom"
+      data-theme="preferred_color_scheme"
+      data-lang="zh-CN"
+      data-loading="lazy"
+      crossorigin="anonymous"
+      async>
+    </script>
+  {% endif %}
+{% endif %}
+
+<!--
+  启用步骤（占位值必须替换，否则评论区不会显示）：
+  1. 仓库必须是 public，且已安装 giscus app：https://github.com/apps/giscus
+  2. 打开 https://giscus.app/zh-CN，填入仓库，勾选 "Announcements" 分类
+  3. 把生成的 data-repo / data-repo-id / data-category / data-category-id 填回上面
+  4. 在 mkdocs.yml 中确认已启用 custom_dir: overrides
+  单页关闭评论：在该页 front matter 写 comments: false
+-->
