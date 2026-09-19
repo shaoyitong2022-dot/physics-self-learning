@@ -118,6 +118,18 @@
 - 有一个能讲清楚的深度项目
 - 建立作品集（GitHub + 技术博客）
 
+## 线上课程
+
+| 出口 | 课程 | 说明 |
+| --- | --- | --- |
+| 通用 | [MIT 6.006 Introduction to Algorithms](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/) | 算法与数据结构，三个出口都用得上 |
+| **量化** | [MIT 6.262 Discrete Stochastic Processes](https://ocw.mit.edu/courses/6-262-discrete-stochastic-processes-spring-2011/) | **走量化必学**：布朗运动、鞅、马尔可夫的完整课程 |
+| **AI** | [MIT 6.036 Introduction to Machine Learning](https://ocw.mit.edu/courses/6-036-introduction-to-machine-learning-fall-2020/) | 机器学习入门 |
+| 科学计算 | [MIT 18.335J Introduction to Numerical Methods](https://ocw.mit.edu/courses/18-335j-introduction-to-numerical-methods-spring-2019/) | 数值方法，与[计算物理](../计算物理/项目清单.md)直接相关 |
+| 科学计算 | [MIT 18.085 Computational Science and Engineering I](https://ocw.mit.edu/courses/18-085-computational-science-and-engineering-i-fall-2008/) | Strang 的经典课 |
+
+完整清单见[在线课程总表](../在线课程总表.md)。
+
 ## 检验标准
 
 | 出口 | 过关标志 |

@@ -31,6 +31,15 @@
 
 原子结构与光谱 → 精细/超精细结构 → 外场中的原子（Zeeman、Stark）→ 分子结构与振动转动光谱 → 激光原理 → 光与物质相互作用（半经典与全量子）→ 腔量子电动力学 → 冷原子与玻色–爱因斯坦凝聚 → 量子信息与量子计量
 
+## 线上课程
+
+| 课程 | 说明 |
+| --- | --- |
+| [MIT 8.421 Atomic and Optical Physics I](https://ocw.mit.edu/courses/8-421-atomic-and-optical-physics-i-spring-2014/) | 原子与光物理，量子技术的入口 |
+| [MIT 8.370x Quantum Information Science I](https://ocw.mit.edu/courses/8-370x-quantum-information-science-i-spring-2018/) | 如果关注量子计算，接着看[量子信息轨道](量子信息.md) |
+
+完整清单见[在线课程总表](../在线课程总表.md)。
+
 ## 教材
 
 | 层次 | 教材 | 说明 |
